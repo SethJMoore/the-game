@@ -4,25 +4,30 @@ title: Weekly D&D Game
 ---
 <section id="main_content">
 
-<h3>
-<span class="octicon"></span>All the stuff</h3>
+  <h3><span class="octicon"></span>All the stuff</h3>
 
-<p>We'll try to keep the details of our campaign updated here. Maybe even do some blog posts... er, journal entries detailing our epic adventures.</p>
+  <p>We'll try to keep the details of our campaign updated here. Maybe even do some blog posts... er, journal entries detailing our epic adventures.</p>
 
-<h3><span class="octicon"></span>A few places to visit</h3>
+  <h3><span class="octicon"></span>A few places to visit</h3>
 
-<p>Check out <a href="/the-game/gm.html">The GM's Corner</a> to hear from the controller of our universe.</p>
+  <p>Check out <a href="/the-game/gm.html">The GM's Corner</a> to hear from the controller of our universe.</p>
 
-<p>Go to the <a href="/the-game/index.html">Barbarian's Page</a>.</p>
+  <p>Go to the <a href="/the-game/index.html">Barbarian's Page</a>.</p>
 
-<p>Go to the <a href="/the-game/index.html">Sorcerer's Page</a>.</p>
+  <p>Go to the <a href="/the-game/index.html">Sorcerer's Page</a>.</p>
 
-<p>Go to the <a href="/the-game/index.html">Ranger's Page</a>.</p>
+  <p>Go to the <a href="/the-game/index.html">Ranger's Page</a>.</p>
 
-<p>Go to the <a href="/the-game/index.html">Bard's Page</a>.</p>
+  <p>Go to the <a href="/the-game/index.html">Bard's Page</a>.</p>
 
-<p>Go to the <a href="/the-game/index.html">Cleric's Page</a>.</p>
+  <p>Go to <a href="/the-game/malark.html">Malark's Page</a>.</p>
 
-<p>More to come...</p>
+  <h3><span class="octicon"></span>Journal Entries</h3>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> by {{ post.author }}</li>
+    {% endfor %}
+  </ul>
 
 </section>
